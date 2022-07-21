@@ -1,0 +1,22 @@
+//Mobile
+@media(max-width:500px){
+    .desktop{
+        display: none;
+    }
+}
+
+//Desktop
+@media(min-width:501px){
+    .mobile{
+        display: none;
+    }
+
+    .adviceGenerator{
+        width: 25em;
+        margin: auto;
+    }
+
+    .dividerDesktop{
+        width: 13em;
+    }
+}

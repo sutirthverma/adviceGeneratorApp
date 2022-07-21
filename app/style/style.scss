@@ -1,2 +1,69 @@
-@use 'variables' as *;
-@use 'responsive' as *;
+@use "variables" as *;
+@use "responsive" as *;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: $darkBlue;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .adviceGenerator {
+        background-color: $darkGrayishBlue;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 10px;
+        text-align: center;
+
+        .adviceNoColumn {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 4px;
+            color: $neonGreen;
+            font-size: 0.8em;
+            margin: 1em 0em;
+
+            .adviceNo{
+                margin-right: 0.2em;
+            }
+        }
+
+        .adviceColumn {
+            color: $lightCyan;
+            font-size: 1.5em;
+
+            .advice {
+                margin-bottom: 0.5em;
+            }
+
+            .dice {
+                position: relative;
+                top: 1.5em;
+                background-color: $neonGreen;
+                outline: 10px solid $neonGreen;
+                border-radius: 30%;
+            }
+
+            .dice:hover {
+                -webkit-box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
+                -moz-box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
+                box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
+            }
+        }
+    }
+}

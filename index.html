@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/style.css">
   <title>Frontend Mentor | Advice generator app</title>
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <main>
+    <div class="adviceGenerator">
+      <div class="adviceNoColumn">
+        <div class="adviceNo">ADVICE</div>
+        <div class="adviceID">#117</div>
+      </div>
   
+      <div class="adviceColumn">
+        <div class="advice">
+          "It is easy to sit up and take notice, what's difficult is getting
+          up and taking action."
+        </div>
+
+        <img src="images/pattern-divider-mobile.svg" alt="" class="dividerMobile mobile">
+        <img src="images/pattern-divider-desktop.svg" alt="" class="dividerDesktop desktop">
+  
+        <div class="diceColumn">
+          <img src="images/icon-dice.svg" alt="" class="dice">
+        </div>
+
+      </div>
+    </div>
+  </main>
+
   <script src="app/js/script.js"></script>
 </body>
+
 </html>
