@@ -17,6 +17,14 @@ body {
     background-color: $darkBlue;
 }
 
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -38,7 +46,7 @@ main {
             font-size: 0.8em;
             margin: 1em 0em;
 
-            .adviceNo{
+            .adviceNo {
                 margin-right: 0.2em;
             }
         }
@@ -51,19 +59,56 @@ main {
                 margin-bottom: 0.5em;
             }
 
+            .loadingCircle {
+                width: 1.8em;
+                height: 1.8em;
+                margin: 1.2em auto;
+                border: 5px solid rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                border-top-color: #fff;
+                animation: loading 1s linear infinite;
+            }
+
+            
+
             .dice {
                 position: relative;
                 top: 1.5em;
                 background-color: $neonGreen;
                 outline: 10px solid $neonGreen;
                 border-radius: 30%;
+                transition: all ease-in-out 100ms;
+            }            
+
+            .diceAnim{
+                animation: dice linear 1s;                
             }
 
             .dice:hover {
+                transform: scale(104%);
                 -webkit-box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
                 -moz-box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
                 box-shadow: 0px 0px 43px 1px rgba(82, 255, 168, 1);
             }
         }
+    }
+}
+
+
+//Animations
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dice {
+    
+    50%{
+        transform: scale(115%);
+    }
+    
+    100%{
+        transform: scale(100%);
     }
 }
