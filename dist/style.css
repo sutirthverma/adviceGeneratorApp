@@ -14,6 +14,9 @@
   .dividerDesktop {
     width: 13em;
   }
+  .dice:hover {
+    transform: scale(104%);
+  }
 }
 html {
   box-sizing: border-box;
@@ -93,7 +96,6 @@ main .adviceGenerator .adviceColumn .diceAnim {
           animation: dice linear 1s;
 }
 main .adviceGenerator .adviceColumn .dice:hover {
-  transform: scale(104%);
   box-shadow: 0px 0px 43px 1px rgb(82, 255, 168);
 }
 
